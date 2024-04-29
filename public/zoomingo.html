@@ -1,0 +1,54 @@
+<!--
+Christopher Roy
+05/18/2020
+Section AK: Austin Jenchi
+
+The contents of the webpage hosted at localhost:8000 which maintains the strucutre of the
+game zoomingo that can be found at said local server. The html page maintains
+multiple sections that dynamically change based off of user input.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="styles.css">
+    <script src="zoomingo.js"></script>
+    <title>Welcome to CSE 154's Zoomingo!</title>
+  </head>
+
+  <body>
+    <main>
+      <section id="input-data">
+        <article>
+          <span>Enter your name:</span>
+          <input id="name" type="text">
+        </article>
+        <article>
+          <span>Choose a board size:</span>
+          <select id="size-select">
+            <option>--Please choose a board size--</option>
+            <option value="9">3x3</option>
+            <option value="25">5x5</option>
+            <option value="49">7x7</option>
+            <option value="81">9x9</option>
+          </select>
+        </article>
+      </section>
+      <article id="buttons">
+        <button id="new-game">New Game</button>
+        <button id="reset">Reset</button>
+        <button id="resume" disabled>Resume Game?</button>
+      </article>
+      <p id="error"></p>
+      <section id="game-state">
+        <p>================================================================================</p>
+        <p id="victory-message"></p>
+      </section>
+      <div id="board" class="hidden"></div>
+      <button id="bingo">Bingo!!!</button>
+    </main>
+  </body>
+
+</html>

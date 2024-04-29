@@ -1,0 +1,22 @@
+{
+  "name": "fp-zoomingo-cr0y",
+  "version": "1.0.0",
+  "description": "_Special thanks to Andrew Fitz Gibbon for this assignment._",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@gitlab.cs.washington.edu:cse154-20sp-students/fp-zoomingo-cr0y.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "multer": "^1.4.2",
+    "nodemon": "^2.0.4",
+    "sqlite": "^4.0.10",
+    "sqlite3": "^4.2.0"
+  }
+}

@@ -1,0 +1,79 @@
+/*
+  Christopher Roy
+  06/08/2020
+  Section AK: Austin Jenchi
+
+  A CSS file for the file zoomingo.html. This file essentially deals with zoomingo.html's
+  style and adds such thing as borders and flex so to maintain an apealing and easy to
+  comprehend structure.
+*/
+
+main {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+#input-data article {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 600px;
+}
+
+#titles {
+  margin-right: 150px;
+}
+
+#name {
+  width: 120px;
+}
+
+#buttons {
+  display: flex;
+  justify-content: space-around;
+  width: 25%;
+}
+
+#board {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  width: 700px;
+  border-style: dotted;
+}
+
+#board.hidden {
+  display: none;
+}
+
+.square {
+  width: 200px;
+  height: 70px;
+  border: 1px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column wrap;
+}
+
+.selected {
+  background-color: lightskyblue;
+}
+
+.disabled {
+  pointer-events: none;
+}
+
+#bingo {
+  background-color: blue;
+  color: white;
+  width: 100px;
+  height: 50px;
+}
+
+#error {
+  align-self: flex-start;
+  color: red;
+  font-size: 30px;
+}
